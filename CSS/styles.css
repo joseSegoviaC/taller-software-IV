@@ -72,14 +72,14 @@ p{margin-bottom: 0.8rem;}
     animation: heroAnimation 18s infinite;
 }
 .hero div:nth-child(1){
-    background-image: url('../img/front1.jpg');
+    background-image: url('../img/museo1.png');
 }
 .hero div:nth-child(2){
-    background-image: url('../img/front2.jpg');
+    background-image: url('../img/HUACA-SLID1.jpg');
     animation-delay: 6s;
 }
 .hero div:nth-child(3){
-    background-image: url('../img/front3.jpg');
+    background-image: url('../img/HUACA-SLID2.jpg');
     animation-delay: 12s;
 }
 
