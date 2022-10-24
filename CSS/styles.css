@@ -270,6 +270,78 @@ header.transparente nav a:hover{
     padding: 2rem 1rem;
     text-align: justify;
 }
+
+/*AGREGACION - CONTACTO*/
+.footer{
+    width:100%;
+    padding:10px 20px;
+}
+
+.aside{
+    
+    display:block;
+    position:relative;
+}
+
+.right{
+    float:right;
+}
+
+.left{
+    float:left;
+}
+.content{
+    position:relative;
+    margin:4rem auto;
+
+}
+
+.contacto-form{
+    width:80%;
+    margin:20px;
+}
+
+.contacto-form button{
+    width:80%;
+    margin:auto;
+}
+
+
+
+@media screen and (min-width:1024px){
+    .contacto-body{
+        display:grid;
+        grid-template-columns: 20% 60% 20%;
+        grid-template-areas: "left content right" ;
+    }
+
+    .left{
+        grid-area:left;
+    }
+    .right{
+        grid-area: right;
+    }
+    .center{
+        grid-area:center;
+    }
+}
+
+
+.title-line{
+    position:absolute;
+    width:80%;
+    height:2px;
+    background-color:#a97c50;
+}
+
+.content h2{
+    font-size:2rem;
+    color:#81501e
+}
+
+/**FIN AGREGACION CONTACTO**/
+
+
 .fila.contacto{margin-top: 80px;}
 .col-100{
     width: 100%;
