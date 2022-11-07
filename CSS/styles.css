@@ -534,13 +534,19 @@ footer .copyright{
 .card .footer-card a:hover{background-color: #664626;}
 
 /*ficha propiedad*/
+/*Agregen sus fichas de propiedad*/
 .propiedad{
     margin-top: 80px;
-    background-image: url("../img/property5.jpg");
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
 }
+
+/*Agregen sus fondos con el .propiedad.lugarX*/
+.propiedad.recinto{
+    background-image: url("../img/RCEREMONIAL3.jpg");
+}
+
 
 .propiedad div:first-child{background-color: rgba(255, 255, 255, 0.9);}
 .propiedad div:first-child h1{
