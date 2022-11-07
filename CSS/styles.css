@@ -90,8 +90,10 @@ p{margin-bottom: 0.8rem;}
     transform: translate(-50%,-50%);
     animation: none;
     opacity: 1;
-    width: 30%;
+    width: auto;
     height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1em;
 }
 
 .hero .hero-down{
@@ -107,7 +109,7 @@ p{margin-bottom: 0.8rem;}
 
 @media(max-width:720px){
     .hero .hero-logo{
-        width: 60%;
+        width: 45%;
     }
     .hero .hero-down{
         width: 15%;
@@ -356,7 +358,7 @@ header.transparente nav a:hover{
 
 /*Parallax*/
 .fila.parallax{
-    background-image: url('../img/property5.jpg');
+    background-image: url('../img/Huaca2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -630,6 +632,10 @@ footer .copyright{
 
 .formulario {
     border-right: 2px solid #a97c50;
+}
+
+.formulario button{
+    width: 100%;
 }
 
 .formulario textarea {
