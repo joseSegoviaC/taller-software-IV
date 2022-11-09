@@ -380,7 +380,7 @@ header.transparente nav a:hover{
     margin-bottom: 1em;
 }
 
-.caja-nav a{
+.caja-nav a, .caja-nav button{
     border: 1px solid #a97c50;
     background-color: white;
     color: #a97c50;
@@ -392,7 +392,7 @@ header.transparente nav a:hover{
     transition: all ease-in-out 400ms;
 }
 
-.caja-nav a:hover{
+.caja-nav a, .caja-nav button:hover{
     background-color: #a97c50;
     color: white;
 }
@@ -683,5 +683,54 @@ footer .copyright{
         margin-bottom: 1em;
     }
 
+}
 
+.info > table {
+    visibility: hidden;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.info > table, .info th, .info td , .info tr {
+    border: 1px solid #a97c50;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    transition: width 0.5s, height 0.5s, font-size 0.5s;
+}
+
+.info img {
+    transition: width 0.5s, margin-bottom 0.5s;
+}
+
+.info button {
+    transition: opacity 0.5s;
+}
+
+.info:hover {
+    flex-direction: row;
+    column-gap: 15px;
+}
+
+.info:hover table,.info:hover tr, .info:hover th,.info:hover td{
+    width: initial;
+    height: initial;
+    font-size: initial;
+    visibility: visible;
+}
+
+.info:hover img{
+    width: 25%;
+    margin-bottom:  0;
+}
+
+.info:hover button {
+    opacity: 0;
+    display: none;
+}   
+
+@media(max-width:720px){
+    .precios:hover {
+       padding-bottom: 100px;
+    }
 }
