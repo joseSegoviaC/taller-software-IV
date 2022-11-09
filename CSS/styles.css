@@ -90,8 +90,10 @@ p{margin-bottom: 0.8rem;}
     transform: translate(-50%,-50%);
     animation: none;
     opacity: 1;
-    width: 30%;
+    width: auto;
     height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1em;
 }
 
 .hero .hero-down{
@@ -107,7 +109,7 @@ p{margin-bottom: 0.8rem;}
 
 @media(max-width:720px){
     .hero .hero-logo{
-        width: 60%;
+        width: 45%;
     }
     .hero .hero-down{
         width: 15%;
@@ -356,7 +358,7 @@ header.transparente nav a:hover{
 
 /*Parallax*/
 .fila.parallax{
-    background-image: url('../img/property5.jpg');
+    background-image: url('../img/Huaca2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -378,7 +380,7 @@ header.transparente nav a:hover{
     margin-bottom: 1em;
 }
 
-.caja-nav a{
+.caja-nav a, .caja-nav button{
     border: 1px solid #a97c50;
     background-color: white;
     color: #a97c50;
@@ -390,7 +392,7 @@ header.transparente nav a:hover{
     transition: all ease-in-out 400ms;
 }
 
-.caja-nav a:hover{
+.caja-nav a, .caja-nav button:hover{
     background-color: #a97c50;
     color: white;
 }
@@ -405,7 +407,8 @@ form.contacto{width: 50%;}
 form.contacto .fila{
     padding: 0.8rem;
 }
-input{
+
+input, textarea{
     border: none;
     border-bottom: 1.5px solid #a97c50;
     font-size: 1rem;
@@ -413,7 +416,7 @@ input{
     width: 100%;
 }
 
-input:focus{
+input:focus , textarea{
     outline: none;
     border-bottom: 1.5px solid #643e18;
 }
@@ -531,13 +534,19 @@ footer .copyright{
 .card .footer-card a:hover{background-color: #664626;}
 
 /*ficha propiedad*/
+/*Agregen sus fichas de propiedad*/
 .propiedad{
     margin-top: 80px;
-    background-image: url("../img/property5.jpg");
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
 }
+
+/*Agregen sus fondos con el .propiedad.lugarX*/
+.propiedad.recinto{
+    background-image: url("../img/RCEREMONIAL3.jpg");
+}
+
 
 .propiedad div:first-child{background-color: rgba(255, 255, 255, 0.9);}
 .propiedad div:first-child h1{
@@ -619,4 +628,109 @@ footer .copyright{
     justify-content: center;
     align-items: center;
     display: none;
+}
+
+/*Contáctenos*/
+
+.fila.contacto img {    
+    width: 50px;
+}
+
+.formulario {
+    border-right: 2px solid #a97c50;
+}
+
+.formulario button{
+    width: 100%;
+}
+
+.formulario textarea {
+    resize: none;
+}
+
+.adicional {
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.adicional h3 {
+    margin-bottom: 2em;
+}
+
+.adicional div p:first-child {
+    letter-spacing: 3px;
+    color: rgb(103, 102, 110, 0.7);
+}
+
+.adicional div p:last-child {
+    font-size: 1.2em;
+}
+
+@media(max-width: 720px){
+    .formulario {
+        border: none;
+        border-bottom: 2px solid #a97c50;
+        margin-bottom: 15px;
+    }
+
+    .adicional {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .adicional h3 {
+        margin-bottom: 1em;
+    }
+
+}
+
+.info > table {
+    visibility: hidden;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.info > table, .info th, .info td , .info tr {
+    border: 1px solid #a97c50;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    transition: width 0.5s, height 0.5s, font-size 0.5s;
+}
+
+.info img {
+    transition: width 0.5s, margin-bottom 0.5s;
+}
+
+.info button {
+    transition: opacity 0.5s;
+}
+
+.info:hover {
+    flex-direction: row;
+    column-gap: 15px;
+}
+
+.info:hover table,.info:hover tr, .info:hover th,.info:hover td{
+    width: initial;
+    height: initial;
+    font-size: initial;
+    visibility: visible;
+}
+
+.info:hover img{
+    width: 25%;
+    margin-bottom:  0;
+}
+
+.info:hover button {
+    opacity: 0;
+    display: none;
+}   
+
+@media(max-width:720px){
+    .precios:hover {
+       padding-bottom: 100px;
+    }
 }
