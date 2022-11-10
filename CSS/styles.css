@@ -222,6 +222,7 @@ header.transparente nav a:hover{
     left: -360px;
     padding-top: 40px;
     transition: all 700ms ease-in-out;
+    z-index: 1;
 }
 
 .menu.abierto{
