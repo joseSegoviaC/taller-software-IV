@@ -547,6 +547,9 @@ footer .copyright{
 .propiedad.recinto{
     background-image: url("../img/RCEREMONIAL3.jpg");
 }
+.propiedad.hluna{
+    background-image: url("../img/HUACALUNA1.jpg");
+}
 
 
 .propiedad div:first-child{background-color: rgba(255, 255, 255, 0.9);}
