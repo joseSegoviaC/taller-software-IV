@@ -596,6 +596,9 @@ footer .copyright{
 .propiedad.hluna{
     background-image: url("../img/HUACALUNA1.jpg");
 }
+.propiedad.personas{
+    background-image: url("../img/auditoria-recursos-humanos.jpg");
+}
 
 
 .propiedad div:first-child{background-color: rgba(255, 255, 255, 0.9);}
@@ -784,3 +787,19 @@ footer .copyright{
        padding-bottom: 100px;
     }
 }
+/* CSS PARA TABLAS*/
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+  }
+  
+  td, th {
+    border: 1px solid #a97c50;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #ece0d4;
+  }
