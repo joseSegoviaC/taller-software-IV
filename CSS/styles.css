@@ -222,6 +222,7 @@ header.transparente nav a:hover{
     left: -360px;
     padding-top: 40px;
     transition: all 700ms ease-in-out;
+    z-index: 1;
 }
 
 .menu.abierto{
@@ -545,6 +546,9 @@ footer .copyright{
 /*Agregen sus fondos con el .propiedad.lugarX*/
 .propiedad.recinto{
     background-image: url("../img/RCEREMONIAL3.jpg");
+}
+.propiedad.hluna{
+    background-image: url("../img/HUACALUNA1.jpg");
 }
 
 
