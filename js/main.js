@@ -19,4 +19,8 @@ $(document).ready(function(){
             scrollTop: $("#pr").offset().top
         }, 2000);
     })
+    //Accionamiento del modal
+    $('#open').click(function(){
+        $('.modal-container').addClass('show')
+    })
 })

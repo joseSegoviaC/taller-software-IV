@@ -130,8 +130,17 @@
                 <div class="fila">
                     <input type="email" class="email" placeholder="Correo electrónico">
                 </div>
-                <div class="fila flex-end">
-                    <button type="submit">Enviar</button>
+                <div class="fila flex-center">
+                    <button type="submit" id="open">Enviar</button>
+                </div>
+                <div class="modal-container" id="modal-container">
+                    <div class="modal">
+                        <h3> Aviso!</h3>
+                        <p>El registro se ha realizado de forma satisfactoria, te estará llegando información al correo registrado.</p>
+                        <button id="close">
+                            Cerrar
+                        </button>
+                    </div>
                 </div>
                 <div class="fila flex-center">
                     <input type="checkbox" id="condiciones">
