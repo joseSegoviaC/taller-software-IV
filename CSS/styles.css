@@ -803,3 +803,11 @@ table {
   tr:nth-child(even) {
     background-color: #ece0d4;
   }
+
+  /*CSS SUBRAYADO INDIVIDUAL*/
+
+  .sub{
+    border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #a97c50;
+  }
